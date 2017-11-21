@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "MyCartViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +20,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     // TODO: Substitute UIViewController with your own subclass.
-    self.window.rootViewController = [[UIViewController alloc] init];
+    self.window.rootViewController = [[MyCartViewController alloc] initWithNibName:@"MyCartViewController" bundle:nil];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
